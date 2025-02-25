@@ -172,19 +172,28 @@ body {
   border-radius: 5px;
 }
 
-.complaint-form button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
+.submit-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   color: #fff;
+  background-color: #007bff;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.complaint-form button:hover {
+.submit-button:hover {
   background-color: #0056b3;
+}
+
+.submit-button i {
+  margin-right: 10px; /* Jarak antara ikon dan teks */
+  width: 20px;
+  height: 20px;
 }
 
 .map iframe {
