@@ -11,17 +11,28 @@
 </head>
 <body>
   <div class="container">
-    <!-- Banner -->
-    <div class="card">
+    <!-- Banner dan Foto Profil -->
+    <div class="card profile-card">
       <header>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Logo_Kementrian_Imigrasi_dan_Pemasyarakatan_%282024%29.png" alt="Banner Rutan Pelaihari" class="banner">
-        <img src="https://via.placeholder.com/150" alt="Foto Profil" class="profile-picture">
-        <h1>Rumah Tahanan Negara Kelas IIB Pelaihari</h1>
-        <p>Informasi dan layanan terkait Rutan Pelaihari</p>
-        <a href="https://example.com" class="website-button">
-          <i data-feather="globe"></i>
-          <span>Kunjungi Website</span>
-        </a>
+        <!-- Foto Banner -->
+        <div class="banner-container">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Logo_Kementrian_Imigrasi_dan_Pemasyarakatan_%282024%29.png" alt="Banner Rutan Pelaihari" class="banner">
+        </div>
+
+        <!-- Foto Profil -->
+        <div class="profile-picture-container">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Logo_Kementrian_Imigrasi_dan_Pemasyarakatan_%282024%29.png" alt="Foto Profil" class="profile-picture">
+        </div>
+
+        <!-- Informasi Profil -->
+        <div class="profile-info">
+          <h1>Rumah Tahanan Negara Kelas IIB Pelaihari</h1>
+          <p>Informasi dan layanan terkait Rutan Pelaihari</p>
+          <a href="https://example.com" class="website-button">
+            <i data-feather="globe"></i>
+            <span>Kunjungi Website</span>
+          </a>
+        </div>
       </header>
     </div>
 
@@ -56,7 +67,7 @@
     <div class="card">
       <section class="service-schedule">
         <h2>Jadwal Layanan</h2>
-        <ul>
+        <ul class="custom-list">
           <li>Senin: 08.00 s.d 15.00 WITA</li>
           <li>Selasa: 08.00 s.d 15.00 WITA</li>
           <li>Rabu: 08.00 s.d 15.00 WITA</li>
@@ -71,20 +82,31 @@
     <div class="card">
       <section class="visit-schedule">
         <h2>Jadwal Kunjungan/Besuk</h2>
-        <p><strong>Tahanan:</strong></p>
-        <ul>
-          <li>Senin dan Rabu</li>
-          <li>✅ Sesi I: Pukul 09.00 - 11.30 WITA</li>
-          <li>✅ Sesi II: Pukul 13.30 - 14.30 WITA</li>
-        </ul>
-        <p><strong>Narapidana:</strong></p>
-        <ul>
-          <li>Selasa dan Kamis</li>
-          <li>✅ Sesi I: Pukul 09.00 - 11.30 WITA</li>
-          <li>✅ Sesi II: Pukul 13.30 - 14.30 WITA</li>
-          <li>Sabtu: ✅ Sesi I: Pukul 09.00 - 11.30 WITA</li>
-        </ul>
-        <p>🛑 Hari Minggu dan Tanggal Merah LIBUR</p>
+
+        <!-- Tahanan -->
+        <div class="schedule-section">
+          <p><strong>Tahanan:</strong></p>
+          <ul class="custom-list">
+            <li>Senin dan Rabu</li>
+            <li>Sesi I: Pukul 09.00 - 11.30 WITA</li>
+            <li>Sesi II: Pukul 13.30 - 14.30 WITA</li>
+          </ul>
+        </div>
+
+        <!-- Narapidana -->
+        <div class="schedule-section">
+          <p><strong>Narapidana:</strong></p>
+          <ul class="custom-list">
+            <li>Selasa dan Kamis</li>
+            <li>Sesi I: Pukul 09.00 - 11.30 WITA</li>
+            <li>Sesi II: Pukul 13.30 - 14.30 WITA</li>
+            <li>Sabtu</li>
+            <li>Sesi I: Pukul 09.00 - 11.30 WITA</li>
+          </ul>
+        </div>
+
+        <!-- Catatan -->
+        <p class="note">🛑 Hari Minggu dan Tanggal Merah LIBUR</p>
       </section>
     </div>
 
