@@ -32,26 +32,55 @@ body {
   text-align: center;
 }
 
-header img.banner {
+/* Styling untuk card profil */
+.profile-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-container {
+  position: relative;
   width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 15px;
+  height: 200px; /* Tinggi banner */
+  overflow: hidden;
 }
 
-header img.profile-picture {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-bottom: 15px;
+.banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Memastikan gambar menutupi area tanpa distorsi */
 }
 
-header h1 {
+.profile-picture-container {
+  position: absolute;
+  bottom: -75px; /* Menempatkan foto profil di tengah bawah banner */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 150px;
+  border: 5px solid #fff; /* Border putih untuk efek kontras */
+  border-radius: 50%; /* Bentuk bulat */
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
+
+.profile-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Memastikan gambar menutupi area tanpa distorsi */
+}
+
+.profile-info {
+  margin-top: 80px; /* Memberikan ruang untuk foto profil */
+  padding: 20px;
+}
+
+.profile-info h1 {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-header p {
+.profile-info p {
   font-size: 14px;
   color: #666;
   margin-bottom: 20px;
@@ -131,11 +160,27 @@ header p {
   background-color: #FF0000;
 }
 
-.service-schedule ul,
-.visit-schedule ul {
-  list-style: none;
-  padding: 0;
+.custom-list {
+  list-style-type: disc; /* Menggunakan simbol "•" */
+  padding-left: 20px; /* Memberikan ruang untuk simbol "•" */
   margin-top: 10px;
+}
+
+.custom-list li {
+  text-align: left; /* Mengatur teks rata kiri */
+  font-size: 14px; /* Ukuran font */
+  color: #333; /* Warna teks */
+}
+
+.schedule-section {
+  margin-bottom: 20px; /* Jarak antara bagian Tahanan dan Narapidana */
+}
+
+.note {
+  font-size: 14px;
+  color: #e74c3c; /* Warna merah untuk peringatan */
+  margin-top: 10px;
+  text-align: center;
 }
 
 .complaint-form input,
