@@ -146,6 +146,11 @@ body {
   margin-top: 10px;
 }
 
+.no-bullet {
+  list-style-type: none; /* Menghilangkan simbol "•" */
+  padding-left: 0; /* Menghapus padding kiri */
+}
+
 .custom-list li {
   text-align: left; /* Mengatur teks rata kiri */
   font-size: 14px; /* Ukuran font */
@@ -190,10 +195,10 @@ body {
   background-color: #0056b3;
 }
 
-.submit-button i {
-  margin-right: 10px; /* Jarak antara ikon dan teks */
-  width: 20px;
-  height: 20px;
+.submit-button i.small-icon {
+  width: 16px; /* Ukuran ikon lebih kecil */
+  height: 16px; /* Ukuran ikon lebih kecil */
+  margin-right: 8px; /* Jarak antara ikon dan teks */
 }
 
 .map iframe {
