@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rumah Tahanan Negara Kelas IIB Pelaihari</title>
-  <!-- Menggunakan IconHero via CDN -->
-  <link rel="stylesheet" href="https://cdn.iconhero.com/css/iconhero.min.css">
+  <!-- Feather Icons via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
   <!-- CSS Lokal -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -13,12 +13,12 @@
   <div class="container">
     <!-- Banner -->
     <header>
-      <img src="https://via.placeholder.com/800x300" alt="Banner Rutan Pelaihari" class="banner">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Logo_Kementrian_Imigrasi_dan_Pemasyarakatan_%282024%29.png" alt="Banner Rutan Pelaihari" class="banner">
       <img src="https://via.placeholder.com/150" alt="Foto Profil" class="profile-picture">
       <h1>Rumah Tahanan Negara Kelas IIB Pelaihari</h1>
       <p>Informasi dan layanan terkait Rutan Pelaihari</p>
       <a href="https://example.com" class="website-button">
-        <i class="iconhero-globe"></i>
+        <i data-feather="globe"></i>
         <span>Kunjungi Website</span>
       </a>
     </header>
@@ -27,12 +27,24 @@
     <section class="social-media">
       <h2>Media Sosial</h2>
       <div class="social-icons">
-        <a href="https://wa.me/your-number" class="social-icon whatsapp"><i class="iconhero-whatsapp"></i></a>
-        <a href="https://instagram.com/your-profile" class="social-icon instagram"><i class="iconhero-instagram"></i></a>
-        <a href="https://facebook.com/your-profile" class="social-icon facebook"><i class="iconhero-facebook"></i></a>
-        <a href="https://twitter.com/your-profile" class="social-icon twitter"><i class="iconhero-twitter"></i></a>
-        <a href="https://tiktok.com/@your-profile" class="social-icon tiktok"><i class="iconhero-tiktok"></i></a>
-        <a href="https://youtube.com/your-channel" class="social-icon youtube"><i class="iconhero-youtube"></i></a>
+        <a href="https://wa.me/your-number" class="social-icon whatsapp">
+          <i data-feather="message-circle"></i>
+        </a>
+        <a href="https://instagram.com/your-profile" class="social-icon instagram">
+          <i data-feather="instagram"></i>
+        </a>
+        <a href="https://facebook.com/your-profile" class="social-icon facebook">
+          <i data-feather="facebook"></i>
+        </a>
+        <a href="https://twitter.com/your-profile" class="social-icon twitter">
+          <i data-feather="twitter"></i>
+        </a>
+        <a href="https://tiktok.com/@your-profile" class="social-icon tiktok">
+          <i data-feather="music"></i>
+        </a>
+        <a href="https://youtube.com/your-channel" class="social-icon youtube">
+          <i data-feather="youtube"></i>
+        </a>
       </div>
     </section>
 
@@ -91,11 +103,13 @@
 
     <!-- Footer -->
     <footer>
-      <p>&copy; 2025 Humas Rutan Pelaihari. All rights reserved.</p>
+      <p>&copy; 2023 Rutan Pelaihari. All rights reserved.</p>
     </footer>
   </div>
 
-  <!-- JavaScript Lokal -->
-  <script src="script.js"></script>
+  <!-- Inisialisasi Feather Icons -->
+  <script>
+    feather.replace();
+  </script>
 </body>
 </html>
