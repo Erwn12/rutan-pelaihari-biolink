@@ -164,10 +164,11 @@ body {
 }
 
 .note {
-  font-size: 14px;
-  color: #e74c3c; /* Warna merah untuk peringatan */
-  margin-top: 10px;
-  text-align: center;
+  font-size: 12px; /* Ukuran font lebih kecil */
+  font-style: italic; /* Teks miring */
+  color: #666; /* Warna abu-abu untuk memberikan kesan note */
+  margin-top: 10px; /* Jarak dari elemen sebelumnya */
+  text-align: left; /* Rata kiri */
 }
 
 .complaint-form input,
@@ -213,4 +214,29 @@ footer {
   margin-top: 20px;
   font-size: 12px;
   color: #666;
+}
+
+/* Styling untuk Floating Button */
+#chatBubbleRoot {
+  position: fixed; /* Tetap di posisi layar */
+  bottom: 20px; /* Jarak dari bawah */
+  right: 20px; /* Jarak dari kanan */
+  z-index: 1000; /* Pastikan berada di atas elemen lain */
+}
+
+#chatBubbleRoot button {
+  background-color: #07213d; /* Warna tombol */
+  color: #fff; /* Warna teks */
+  border: none;
+  border-radius: 50%; /* Bentuk bulat */
+  width: 60px; /* Lebar tombol */
+  height: 60px; /* Tinggi tombol */
+  font-size: 24px; /* Ukuran ikon */
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  transition: background-color 0.3s ease; /* Efek hover */
+}
+
+#chatBubbleRoot button:hover {
+  background-color: #051b30; /* Warna lebih gelap saat hover */
 }
