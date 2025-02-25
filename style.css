@@ -26,7 +26,14 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-header img.logo {
+header img.banner {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+header img.profile-picture {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -44,31 +51,112 @@ header p {
   margin-bottom: 20px;
 }
 
-.bio-links {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.link-item {
-  display: flex;
+.website-button {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   color: #fff;
   background-color: #007bff;
-  padding: 15px;
+  padding: 10px 20px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
-.link-item:hover {
+.website-button:hover {
   background-color: #0056b3;
 }
 
-.link-item i {
+.website-button i {
   margin-right: 10px;
-  font-size: 20px;
+}
+
+.social-media {
+  margin-top: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #0056b3;
+}
+
+.social-icon.whatsapp {
+  background-color: #25D366;
+}
+
+.social-icon.instagram {
+  background-color: #E1306C;
+}
+
+.social-icon.facebook {
+  background-color: #1877F2;
+}
+
+.social-icon.twitter {
+  background-color: #1DA1F2;
+}
+
+.social-icon.tiktok {
+  background-color: #000;
+}
+
+.social-icon.youtube {
+  background-color: #FF0000;
+}
+
+.service-schedule ul,
+.visit-schedule ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.complaint-form input,
+.complaint-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.complaint-form button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.complaint-form button:hover {
+  background-color: #0056b3;
+}
+
+.map iframe {
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
 footer {
