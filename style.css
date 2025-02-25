@@ -38,41 +38,21 @@ body {
   overflow: hidden;
 }
 
-.banner-container {
-  position: relative;
-  width: 100%;
-  height: 200px; /* Tinggi banner */
-  overflow: hidden;
-}
-
-.banner {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Memastikan gambar menutupi area tanpa distorsi */
-}
-
 .profile-picture-container {
-  position: absolute;
-  bottom: -75px; /* Menempatkan foto profil di tengah bawah banner */
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 0 auto; /* Menempatkan foto profil di tengah */
   width: 150px;
   height: 150px;
   border: 5px solid #fff; /* Border putih untuk efek kontras */
   border-radius: 50%; /* Bentuk bulat */
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+  margin-bottom: 20px; /* Jarak antara foto profil dan teks */
 }
 
 .profile-picture {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Memastikan gambar menutupi area tanpa distorsi */
-}
-
-.profile-info {
-  margin-top: 80px; /* Memberikan ruang untuk foto profil */
-  padding: 20px;
 }
 
 .profile-info h1 {
