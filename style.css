@@ -146,11 +146,6 @@ body {
   margin-top: 10px;
 }
 
-.no-bullet {
-  list-style-type: none; /* Menghilangkan simbol "•" */
-  padding-left: 0; /* Menghapus padding kiri */
-}
-
 .custom-list li {
   text-align: left; /* Mengatur teks rata kiri */
   font-size: 14px; /* Ukuran font */
@@ -159,6 +154,12 @@ body {
 
 .schedule-section {
   margin-bottom: 20px; /* Jarak antara bagian Tahanan dan Narapidana */
+}
+
+.schedule-section p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: left;
 }
 
 .note {
